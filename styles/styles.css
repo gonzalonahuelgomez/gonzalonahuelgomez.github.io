@@ -180,7 +180,7 @@ h3{
   }
 
   .mapa-container{
-      background-color: #60484D;
+      background-color: #D8D3CD;
       height: 60vh;
       display: flex;
       justify-content: center;
@@ -189,6 +189,7 @@ h3{
 
   #mapa {
     height: 50vh;
-    width: 50vw;
-    border-radius: 10px;
+    width: 42vw;
+    border: 5px solid white;
+    border-radius: 10px ;
   }
