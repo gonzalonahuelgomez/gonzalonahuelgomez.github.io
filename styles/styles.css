@@ -52,7 +52,28 @@ nav{
     justify-content: center;
     background-color: beige;
     margin-top: 10px;
-    border-radius: 10px;
+}
+
+.forms{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: linear-gradient(#DBD1C6 10%,#D9D0C9 15%,#DBD4CC 25%,#E3DED8 45%,#EBE7E0 90%);
+    margin-top: 10px;
+    /* background: url('../img/second-hand-form.png') no-repeat;
+    background-size: contain;*/
+}
+
+.imagen{
+    background: url('../img/second-hand-form.png') no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+
+.test{
+    margin: auto;
 }
 
 .banner-content{
@@ -84,6 +105,17 @@ h3{
 .bot-from-h1{
     margin-top: 10%;
     margin-left: 5%;
+}
+
+.btn-primary{
+    background-color: #ACA38E !important;
+    border-color: #ACA38E !important;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #A39881 !important;
+    border-color: #a29984 !important;
 }
 
 .btn-white {
@@ -133,15 +165,30 @@ h3{
     margin-bottom: 0;
   }
   
-  .footer {
+  footer {
     background: #b8b88c;
     color: white;
     text-align: center;
     font-size: 20px;
     padding: 10px 0px;
+    position: sticky;
   }
   
   .container {
     width: 900px;
     margin: 40px auto;
+  }
+
+  .mapa-container{
+      background-color: #60484D;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #mapa {
+    height: 50vh;
+    width: 50vw;
+    border-radius: 10px;
   }
