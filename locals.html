@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <section class="banner">
@@ -22,15 +23,21 @@
             </div>
             <div class="menu-wrapper">
                 <ul class="menu">
-                    <a href="#"><li>Tienda</li></a>
-                    <a href="locals.html"><li>Locales</li></a>
-                    <a href="contact.html"><li>Contacto</li></a>
+                    <a href="#"><li><i class="fas fa-shopping-cart"></i>Tienda</li></a>
+                    <a href="locals.html"><li><i class="fas fa-home"></i>Locales</li></a>
+                    <a href="contact.html"><li><i class="fas fa-phone-alt"></i>Contacto</li></a>
                 </ul>
             </div>
         </nav>
     </section>
+    <div class="cards" style="grid-template-columns: 1fr 1fr; background-color: #8F8270; padding: 5vh">
+        <div class="card-white">Local 1</div>
+        <div class="card-white">Local 2</div>
+        <div class="card-white">Local 3</div>
+        <div class="card-white">Local 4</div>
+    </div>
     <div class="mapa-container">
-        <div id="mapa"></div>
+        <div id="mapa" style="position: sticky !important;"></div>
     </div>
     <footer>Hecho por amantes de la moda</footer>
     <script src="js/app.js"></script>
