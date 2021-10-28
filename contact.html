@@ -20,7 +20,7 @@
             font-family: 'Raleway', sans-serif;
         }
     </style>
-    <section class="banner">
+    <header>
         <nav style="align-items: baseline;">
             <div class="logo-wrapper">
                 <a href="index.html">
@@ -30,37 +30,37 @@
             <div class="menu-wrapper">
                 <ul class="menu">
                     <a href="#"><li><i class="fas fa-shopping-cart"></i>Tienda</li></a>
-                    <a href="locals.html"><li><i class="fas fa-home"></i>Locales</li></a>
+                    <a href="locals.html"><li><i class="fas fa-home"></i>Nuestros Locales</li></a>
                     <a href="contact.html"><li><i class="fas fa-phone-alt"></i>Contacto</li></a>
                 </ul>
             </div>
         </nav>
-    </section>
+    </header>
     <section class="forms">
         <div class="imagen"></div>
         <div class="test">
-            <form>
+            <form class="needs-validation">
                 <div class="row">
                     <div class="col-md-6">
                         <label for="inputName">Nombre</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+                        <input type="text" class="form-control" id="inputName" placeholder="Nombre" required>
                     </div>
                     <div class="col-md-6">
                         <label for="inputLastName">Apellido</label>
-                        <input type="text" class="form-control" id="inputLastName" placeholder="Apellido">
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Apellido" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="inputTelephone">Teléfono</label>
-                    <input type="text" class="form-control" id="inputTelephone" placeholder="Teléfono">
+                    <input type="text" class="form-control" id="inputTelephone" placeholder="Teléfono" required>
                 </div>
                 <div class="form-group">
                     <label for="inputEmail">E-mail</label>
-                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="E-mail">
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="E-mail" required>
                 </div>
                 <div class="form-group">
                     <label for="inputConsulta">Consulta</label>
-                    <textarea class="form-control" id="inputConsulta" rows="3"></textarea>
+                    <textarea class="form-control" id="inputConsulta" rows="3" required></textarea>
                 </div>
                 <div style="margin-top: 10px; display: flex; justify-content: space-between;
                 align-items: center;">
@@ -75,7 +75,6 @@
         </div>
     </section>
     <footer>Hecho por amantes de la moda</footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <script src="app.js"></script>
 </body>
 </html>

@@ -7,14 +7,14 @@
     <title>Berta - Second Hand Clothes</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="styles/styles.css">
-
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <section class="banner">
+    <header>
         <nav>
             <div class="logo-wrapper">
                 <a href="index.html">
@@ -24,22 +24,43 @@
             <div class="menu-wrapper">
                 <ul class="menu">
                     <a href="#"><li><i class="fas fa-shopping-cart"></i>Tienda</li></a>
-                    <a href="locals.html"><li><i class="fas fa-home"></i>Locales</li></a>
+                    <a href="locals.html"><li><i class="fas fa-home"></i>Nuestros Locales</li></a>
                     <a href="contact.html"><li><i class="fas fa-phone-alt"></i>Contacto</li></a>
                 </ul>
             </div>
         </nav>
-    </section>
-    <div class="cards" style="grid-template-columns: 1fr 1fr; background-color: #8F8270; padding: 5vh">
-        <div class="card-white">Local 1</div>
-        <div class="card-white">Local 2</div>
-        <div class="card-white">Local 3</div>
-        <div class="card-white">Local 4</div>
-    </div>
-    <div class="mapa-container">
-        <div id="mapa" style="position: sticky !important;"></div>
+    </header>
+    <div class="local-container">
+        <span style="font-size: 32px;">LOCALES<br></span>
+        <span style="position: relative; font-size: small; line-height: 0; vertical-align: baseline; top: 1.5em; margin-bottom: 1.5em; color: rgb(63, 63, 63);"><br>*Hace click sobre el nombre de la tienda para saber como llegar!</span>
+        <div class="locales">
+            <div class="local" onclick="setMapa('Berta Colegiales')">
+                <span><strong>Berta Colegiales</strong>/ Av. Federico Lacroze 3333, CABA</span><br>
+                <span>Lun. a Sáb. de 09 a 19hs. / Tel: </span><br>
+                <span>Whatsapp:  </span>
+            </div>
+            <div class="local" onclick="setMapa('Berta Palermo')">
+                <span><strong>Berta Palermo</strong>/ Av. Cabildo 169, CABA</span><br>
+                <span>Lun. a Sáb. de 10 a 19hs. / Tel: </span><br>
+                <span>Whatsapp:  </span>
+            </div>
+            <div class="local" onclick="setMapa('Berta Recoleta')">
+                <span><strong>Berta Recoleta</strong>/ Av. Santa Fe 1430, CABA</span><br>
+                <span>Lun. a Sáb. de 10 a 20hs. / Tel: </span><br>
+                <span>Whatsapp:  </span>
+            </div>
+            <div class="local" onclick="setMapa('Berta Villa Crespo')">
+                <span><strong>Berta Villa Crespo</strong>/ Av. Warnes 980, CABA</span><br>
+                <span>Lun. a Sáb. de 10 a 19hs. / Tel: </span><br>
+                <span>Whatsapp:  </span>
+            </div>
+        </div>
+        
+        <div class="mapa-container">
+            <div id="mapa"></div>
+        </div>
     </div>
     <footer>Hecho por amantes de la moda</footer>
-    <script src="js/app.js"></script>
+    <script src="js/map.js"></script>
 </body>
 </html>
