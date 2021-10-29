@@ -1,6 +1,7 @@
 html, body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
+    background-color: #D8D3CD;
 }
 
 header{
@@ -52,7 +53,7 @@ nav{
     display: flex;
     flex-direction:column;
     justify-content: center;
-    background-color: beige;
+    background-color: #D8D3CD;
     margin-top: 10px;
 }
 
@@ -198,7 +199,7 @@ footer {
 }
 
 .local{
-    color: grey;
+    color: rgb(101, 101, 101);
     cursor: pointer;
 }
 
@@ -236,8 +237,8 @@ div#mapa.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leafle
 #loader-container .loader{
     position: absolute;
     left: 50%;
-    width: 60%;
-    height: 60%;
+    width: 30%;
+    height: 30%;
     background-size: cover;
     background-image: url(../img/perchacirculo.png);
     animation: loader 2s linear infinite;
@@ -247,9 +248,9 @@ div#mapa.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leafle
 #loader-container .loader2{
     position: absolute;
     left: 50%;
-    width: 61%;
-    height: 61%;
-    border: solid 1.5vh transparent;
+    width: 35%;
+    height: 35%;
+    border: solid .6vh transparent;
     border-top-color: #1C1C1C;
     border-left-color: #1C1C1C;
     border-radius: 50%;
@@ -259,9 +260,9 @@ div#mapa.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leafle
 #loader-container .loader3{
     position: absolute;
     left: 50%;
-    width: 67%;
-    height: 67%;
-    border: solid 1.5vh transparent;
+    width: 41%;
+    height: 41%;
+    border: solid .6vh transparent;
     border-top-color: #1C1C1C;
     border-left-color: #1C1C1C;
     border-radius: 50%;
