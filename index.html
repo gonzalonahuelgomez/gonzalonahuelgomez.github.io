@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Berta - Second Hand Clothes</title>
-    <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div id="loader-container" style="display: none;">
+    <div id="loader-container">
         <div class="loader"></div>
         <div class="loader2"></div>
         <div class="loader3"></div>
     </div>
-    <div id="home">
+    <div id="home" style="display: none;">
     <header>
         <nav>
             <div class="logo-wrapper">
@@ -37,44 +37,50 @@
     </header>
     <section class="content">
         <div class="banner-content">
-            <h1>Haz <span class="text-color">Second-Hand</span> <br/>Tu Primer Opción</h1>
+            <h1 id="quote">COMPRA <span class="text-color">ROPA</span> <br/>QUE DURE MÁS QUE LAS <span class="text-color">MODAS</span></h1>
             <div class="centrado">
                 <p class="bot-from-h1">Reutiliza, recicla y luce mejor!</p>
                 <button class="btn-white">COMPRA AHORA!</button>
+                <p class="bot-from-button">#ROPAVIEJA</p>
             </div>
         </div>
     </section>
     
     <div class="container">
         <h2>Descubre nuestras prendas</h2>
-            <div class="owl-carousel owl-theme">
-            
-            <a href="#">                
+            <div class="owl-carousel owl-theme">       
                 <div class="card-white">
-                    <img src="img/hombre.jpg" alt="Men clothes">
-                    <h3>Men</h3>
+                    <img src="img/carousel1" alt="Saco">
                 </div>
-            </a>
-            <a href="#">
                 <div class="card-white">
-                    <img src="img/mujer.jpg" alt="Women clothes">
-                    <h3>Women</h3>
+                    <img src="img/carousel2" alt="Jean">
                 </div>
-            </a>
-            <a href="#">
                 <div class="card-white">
-                    <img src="img/niños.jpg" alt="Kids clothes">
-                    <h3>Kids</h3>
+                    <img src="img/carousel3.jfif" alt="Remera">                    
                 </div>
-            </a>
+                <div class="card-white">
+                    <img src="img/carousel4.jfif" alt="Camisa">                    
+                </div>
+                <div class="card-white">
+                    <img src="img/carousel5.jfif" alt="Traje de Baño">                    
+                </div>
+                <div class="card-white">
+                    <img src="img/carousel6.jfif" alt="Falda">                    
+                </div>
+                <div class="card-white">
+                    <img src="img/carousel7.jfif" alt="Accesorio">                    
+                </div>
+                <div class="card-white">
+                    <img src="img/carousel8.jfif" alt="Zapatos">                    
+                </div>
         </div>
         
     </div>
         
 
-    <section class="content">
+    <section class="content iframe">
         <div style="margin: auto; padding-bottom: 4vh;">
-            <iframe width="820" height="450" style="margin: auto" src="https://www.youtube.com/embed/D6d-Tryo35k" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/B5ElvV5cyFg?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
         </div>
     </section>
     <footer>Hecho por amantes de la moda</footer>
@@ -88,9 +94,14 @@
             items:4,
             loop:true,
             margin:10,
+            nav: true,
+            navText: [
+                "<i class='fa fa-angle-left fa-2x'></i>", "<i class='fa fa-angle-right fa-2x'></i>"
+            ],
             autoplay:true,
             autoplayTimeout:2500,
             autoplayHoverPause:true,
+            dots: false,
             responsive:{
                 0:{
                     items:1,
